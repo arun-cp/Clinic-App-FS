@@ -1,0 +1,49 @@
+.headmain {
+    width: 100%;
+    height: 12vh;
+}
+
+.headbody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1%;
+}
+
+.headleft {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1%;
+    height: 100%;
+    flex: 1;
+}
+
+.headleft img{
+    width: 60%;
+}
+
+.headright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+
+.headright div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+    width: 20%;
+    height: 60%;
+    margin: 1%;
+    text-align: center;
+}
+
+.headright div:hover {
+    background-color: #dbeafe;   /* light blue on hover */
+}

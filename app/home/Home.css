@@ -1,0 +1,50 @@
+.homemain{
+    height: auto;
+    padding: 0% 1%;
+}
+
+.homemain img {
+    width: 60%;
+}
+
+.homemain button {
+    width: 30%;
+    height: 12%;
+}
+
+.headtag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: brown;
+    height: 70vh;
+}
+
+.headtag div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+
+.homecont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.homecont div {
+    background-color: #7d95d8c8;
+    width: 24%;
+    border-radius: 2%;
+    padding: 1%;
+}
+
+.homefoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    margin: 1% 0%;
+}
+
