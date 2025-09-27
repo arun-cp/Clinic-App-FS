@@ -8,21 +8,22 @@ import Popadddoc from "./Popadddoc";
 export default function Clsetting({ clnc }) {
     const [ popdoc , setpopdoc ] = useState(false);
     const [ docs , setdocs ] = useState([]);
-    
-    useEffect(() => {
-        async function getdata(){
-            try {
-                const res = await fetch('/api/getdoc');
-                const data = await res.json();
-                const fltrdata = data.filter((dat) => dat.cid == clnc.cid);
-                setdocs(fltrdata);
-                console.log(docs);
-            } catch (err) {
-                console.log('Failed to fetch');
-            } finally {
 
-            }
+    async function getdata(){
+        try {
+            const res = await fetch('/api/getdoc');
+            const data = await res.json();
+            const fltrdata = data.filter((dat) => dat.cid == clnc.cid);
+            setdocs(fltrdata);
+            console.log(docs);
+        } catch (err) {
+            console.log('Failed to fetch');
+        } finally {
+
         }
+    }
+
+    useEffect(() => {
         getdata();
     }, [popdoc])
 

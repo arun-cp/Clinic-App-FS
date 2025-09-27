@@ -31,7 +31,7 @@ export default function Clogin({cancel}) {
     return(
         <div className="popbg">
             <div className="cloginbox">
-                <img src={log.src} />
+                <img src={log.src} alt="img"/>
                 <div className="clogincont">
                     <form onSubmit={handleSubmit}>
                         <h2>Clinic Admin Login</h2>

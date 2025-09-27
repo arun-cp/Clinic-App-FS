@@ -61,8 +61,8 @@ export default function Clappoint({ clnc }) {
             <hr/>
             <div className="appointcont">
                 {docs.map((doc, index) => (
-                    <div className="appointadd">
-                        <div className="appdocdet" key={index}>
+                    <div className="appointadd" key={index}>
+                        <div className="appdocdet" >
                             <div className="appdocl">
                                 <h2>Dr. {doc.dname}</h2>
                                 <h3>{doc.dsp}</h3>

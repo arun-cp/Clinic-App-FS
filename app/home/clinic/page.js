@@ -14,23 +14,24 @@ export default function Clmnge() {
     const [ load, setload ] = useState(true);
     const { data: session , status} = useSession();
 
-    useEffect(() => {
-        async function getdata(){
-            try {
-                setload(true);
-                const res1 = await fetch('/api/getclinic');
-                const data1 = await res1.json();
-                console.log(session? session.user.name : null)
-                const fltrdata = data1.filter((data) => data.cid == session?.user?.name);
-                console.log(fltrdata);
-                setclnc(fltrdata[0]);
-                console.log(clnc);
-            } catch (err) {
-                console.log('Failed to fetch');
-            } finally {
-                setload(false);
-            }
+    async function getdata(){
+        try {
+            setload(true);
+            const res1 = await fetch('/api/getclinic');
+            const data1 = await res1.json();
+            console.log(session? session.user.name : null)
+            const fltrdata = data1.filter((data) => data.cid == session?.user?.name);
+            console.log(fltrdata);
+            setclnc(fltrdata[0]);
+            console.log(clnc);
+        } catch (err) {
+            console.log('Failed to fetch');
+        } finally {
+            setload(false);
         }
+    }
+
+    useEffect(() => {
         if (status === "authenticated") {
             getdata();
         }

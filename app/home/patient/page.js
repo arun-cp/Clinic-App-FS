@@ -11,7 +11,7 @@ const [ navs, setnavs ] = useState("ser");
 
     return(
         <div className="patmain">
-            <img src={pat.src} />
+            <img src={pat.src} alt="pat" />
             <div className="patfill">
                 <div className="pathead">
                     <div className={navs == "ser" ? "active" : undefined } onClick={() => setnavs("ser")}>

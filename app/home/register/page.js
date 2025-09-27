@@ -42,7 +42,7 @@ export default function Cregister() {
 
     return(
         <div className="regmain">
-            <img src={reg.src} />
+            <img src={reg.src} alt="reg" />
             <div className="regfill">
                 <h1>Register Now As Clinic</h1>
                 <form onSubmit={regdata}>

@@ -43,7 +43,7 @@ export default function Home(){
             </div>
             <div className="homecont">
                 <div>
-                    <img src={appoint.src} style={{ width: '25%', height: 'auto' }} />
+                    <img src={appoint.src} alt="Appointments" style={{ width: '25%', height: 'auto' }} />
                     <h3>Appointments</h3>
                     <hr/>
                     <p>
@@ -54,7 +54,7 @@ export default function Home(){
                     </p>
                 </div>
                 <div>
-                    <img src={patient.src} style={{ width: '25%', height: 'auto' }} />
+                    <img src={patient.src} alt="Patient Records" style={{ width: '25%', height: 'auto' }} />
                     <h3>Patient Records</h3>
                     <hr/>
                     <p>
@@ -65,7 +65,7 @@ export default function Home(){
                     </p>
                 </div>
                 <div>
-                    <img src={report.src} style={{ width: '25%', height: 'auto' }} />
+                    <img src={report.src} alt="Reports & Analytics" style={{ width: '25%', height: 'auto' }} />
                     <h3>Reports & Analytics</h3>
                     <hr/>
                     <p>
@@ -76,7 +76,7 @@ export default function Home(){
                     </p>
                 </div>
                 <div>
-                    <img src={self.src} style={{ width: '25%', height: 'auto' }} />
+                    <img src={self.src} alt="Patient Portal" style={{ width: '25%', height: 'auto' }} />
                     <h3>Patient Portal</h3>
                     <hr/>
                     <p>
