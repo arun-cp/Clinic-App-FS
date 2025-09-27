@@ -1,6 +1,10 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --pop-bg-color: rgb(231, 230, 230);
+  --sec-bg-color: rgb(176 215 165 / 30%);
+  --color1: azure;
+  --color2: rgba(129, 125, 241, 0.736);
+  --color3: rgb(175, 167, 134);
+  --input-color: rgba(171, 180, 207, 0.588)
 }
 
 html,
@@ -43,4 +47,16 @@ span {
   font-size: 140%;
 }
 
+.popbg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
 

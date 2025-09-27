@@ -1,0 +1,43 @@
+.ptrgmain{
+    height: 90%;
+    width: 100%;
+}
+
+.ptrgmain form {
+    width: 100%;
+    height: 90%;
+    padding: 3%;
+    overflow-y: auto;
+}
+
+.ptrgmain button {
+    margin: 3%;
+    width: 30%;
+    height: 10%;
+}
+
+.ptrgip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+
+.ptrgip div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 45%;
+    height: 100%
+}
+
+.ptrgip input, select {
+    padding: 1%;
+    background: var(--input-color);
+    border-radius: 5px;
+    height: 55%;
+    width: 100%;
+    margin: 1%;
+}

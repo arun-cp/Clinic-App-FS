@@ -1,0 +1,70 @@
+.setmain {
+    width: 95%;
+    height: 95%;
+}
+
+.sethead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color1);
+    padding: 1%;
+    margin: 1% 0%;
+    height: 30%;
+}
+
+.sethead button {
+    width: 10%;
+    margin: 2%;
+}
+
+.setdoc {
+    background-color: var(--color1);
+    padding: 1%;
+    height: 65%;
+    margin: 1% 0%;
+}
+
+.setdoc button {
+    width: 15%;
+    margin: 1%;
+}
+
+.dochead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.doclist {
+    overflow-y: scroll;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.docdet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color2);
+    padding: 0.5%;
+    margin: 1% 0%;
+    height: 50%;
+    width: 98%;
+    flex: 1;
+}
+
+.docl {
+    width: 50%;
+}
+
+.doclbtn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 50%;
+    width: 40%;
+}
+

@@ -1,0 +1,38 @@
+.ptsrmain{
+    height: 90%;
+    width: 100%;
+    padding: 2%;
+}
+
+.ptsrmain form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ptsrmain button {
+    margin: 3%;
+    width: 30%;
+    height: 10%;
+}
+
+.ptsrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 20%;
+}
+
+.ptsrip input {
+    padding: 1%;
+    background: var(--input-color);
+    border-radius: 5px;
+    height: 45%;
+    width: 100%;
+    margin: 1%;
+}

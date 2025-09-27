@@ -1,0 +1,40 @@
+.patmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 87vh;
+    width: 100%;
+}
+
+.patmain img {
+    width: 40%;
+}
+
+.patfill {
+    background: var(--sec-bg-color);
+    border-width: 1%;
+    text-align: center;
+    color: brown;
+    padding: 1%;
+    width: 50%;
+    height: 90%;
+}
+
+.pathead {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8%;
+}
+
+.pathead div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1%;
+}
+
+.pathead div.active {
+    background-color: azure;
+}

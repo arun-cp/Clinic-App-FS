@@ -47,3 +47,11 @@
 .headright div:hover {
     background-color: #dbeafe;   /* light blue on hover */
 }
+
+.headright .headlog {
+    background-color: rgba(149, 161, 171, 0.79);
+}
+
+.headright .headlog:hover {
+    background-color: #dbeafe;   /* light blue on hover */
+}

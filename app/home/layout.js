@@ -1,4 +1,7 @@
+'use client';
+
 import { Geist, Geist_Mono } from "next/font/google";
+import { SessionProvider } from "next-auth/react";
 import Header from "./Header";
 import "../globals.css";
 
@@ -16,8 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
+        <SessionProvider>
+          <Header/>
+          {children}
+        </SessionProvider>
       </body>
     </html>
   );

@@ -1,0 +1,52 @@
+.clmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+    width: 100%;
+}
+
+.clnav {
+    background: var(--sec-bg-color);
+    width: 20%;
+    height: 90%;
+    margin: 1%;
+    padding: 0.5%;
+    text-align: center;
+    color: rgb(94, 29, 29);
+}
+
+.clnavcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90%;
+    margin: 1%;
+}
+
+.clnavcont div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3%;
+    margin: 1%;
+}
+
+.clnavcont div.active {
+    background-color: azure;
+}
+
+.clnavcont div img{
+    width: 10%;
+}
+
+.clcont {
+    background: var(--sec-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+    margin: 1%;
+}

@@ -5,9 +5,22 @@ import icon from "../Images/headicon.png";
 import head from "../Images/heading.png";
 import Clogin from "./Clogin";
 import { useState } from "react";
+import { signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export default function Header(){
     const [ login, setlogin ] = useState(false);
+    const { data: session , status} = useSession();
+    const router = useRouter();
+
+    function sign() {
+        if(session)
+            signOut({ callbackUrl: "/" })
+        else
+            setlogin(true)
+    }
+
     return(
         <div className="headmain">
             {login ? <Clogin cancel={setlogin} /> : null }
@@ -20,14 +33,14 @@ export default function Header(){
                     <div>
                         <h3>About Us</h3>
                     </div>
-                    <div>
-                        <h3>Consultation</h3>
+                    <div onClick={() => router.push('/home/clinic')}>
+                        <h3>Clinic Manage</h3>
                     </div>
-                    <div>
+                    <div onClick={() => router.push('/home/patient')}>
                         <h3>Patient Service</h3>
                     </div>
-                    <div onClick={() => setlogin(true)}>
-                        <h3>Login</h3>
+                    <div className="headlog" onClick={sign}>
+                        <h3>{session ? session.user.name : "Login"}</h3>
                     </div>
                 </div>
             </div>
